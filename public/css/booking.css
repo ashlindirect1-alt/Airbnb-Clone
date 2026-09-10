@@ -1,0 +1,143 @@
+/* Booking Page */
+
+.booking-container {
+    padding: 60px 7%;
+    max-width: 900px;
+}
+
+.booking-container h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.booking-container > p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Selected Property */
+
+.property-summary {
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #f7f7f7;
+    max-width: 650px;
+}
+
+.property-summary h2 {
+    margin-bottom: 10px;
+}
+
+.property-summary p {
+    margin: 8px 0;
+}
+
+
+/* Booking Form */
+
+.booking-form {
+    max-width: 650px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.confirm-btn {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* Booking Message */
+
+#bookingMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .booking-container {
+        padding: 40px 5%;
+    }
+
+    .booking-container h1 {
+        font-size: 30px;
+    }
+
+    .property-summary {
+        width: 100%;
+    }
+
+}
+
+.price-summary {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    max-width: 650px;
+    font-size: 18px;
+}
+
+/* Booking Confirmation */
+
+.confirmation-card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.confirmation-card h2 {
+    margin-bottom: 20px;
+}
+
+.confirmation-card p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.confirmation-card a {
+    display: inline-block;
+    margin: 20px 8px 0;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    background: #ff385c;
+    color: white;
+}
+
+.confirmation-card a:hover {
+    opacity: 0.9;
+}

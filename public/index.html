@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Airbnb Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            Airbnb
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="listings.html">Stays</a>
+            <a href="bookings.html">Bookings</a>
+        </nav>
+
+        <button class="login-btn" onclick="window.location.href='login.html'">
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Find your next stay</h1>
+
+            <p>
+                Search for unique places to stay around the world.
+            </p>
+
+           <!-- Search Box -->
+<form class="search-box" id="searchForm">
+
+    <div class="search-item">
+        <label>Location</label>
+        <input
+            type="text"
+            id="location"
+            placeholder="Where are you going?"
+        >
+    </div>
+
+    <div class="search-item">
+        <label>Check-in</label>
+        <input
+            type="date"
+            id="checkIn"
+        >
+    </div>
+
+    <div class="search-item">
+        <label>Check-out</label>
+        <input
+            type="date"
+            id="checkOut"
+        >
+    </div>
+
+    <button type="submit" class="search-btn">
+        Search
+    </button>
+
+</form>
+
+<!-- Search Message -->
+<div id="searchMessage"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Properties -->
+    <section class="properties">
+
+        <h2>Featured stays</h2>
+
+        <div class="property-grid">
+
+            <div class="property-card">
+
+                <div class="property-image">
+                    <img
+                        src="images/Property1.jpg"
+                        alt="Property"
+                    >
+                </div>
+
+                <h3>Beautiful Apartment</h3>
+
+                <p>Lahore, Pakistan</p>
+
+                <strong>$80 night</strong>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <div class="property-image">
+                    <img
+                        src="images/Property2.jpg"
+                        alt="Property"
+                    >
+                </div>
+
+                <h3>Luxury Villa</h3>
+
+                <p>Islamabad, Pakistan</p>
+
+                <strong>$120 night</strong>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <div class="property-image">
+                    <img
+                        src="images/Property3.jpg"
+                        alt="Property"
+                    >
+                </div>
+
+                <h3>Modern House</h3>
+
+                <p>Murree, Pakistan</p>
+
+                <strong>$100 night</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

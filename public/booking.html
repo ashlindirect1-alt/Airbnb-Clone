@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Airbnb Clone - Booking</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Airbnb
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="listings.html">Stays</a>
+        </nav>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+    </header>
+
+
+    <main style="padding: 60px 7%;">
+
+        <h1>Complete your booking</h1>
+
+        <p style="margin-top: 15px;">
+            Enter your information to reserve your stay.
+        </p>
+
+        <div id="propertySummary" class="property-summary"></div>
+
+
+        <form id="bookingForm" style="max-width: 600px; margin-top: 40px;">
+
+            <div style="margin-bottom: 20px;">
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                    style="width: 100%; padding: 12px; margin-top: 8px;"
+                >
+            </div>
+
+
+            <div style="margin-bottom: 20px;">
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                    style="width: 100%; padding: 12px; margin-top: 8px;"
+                >
+            </div>
+
+
+            <div style="margin-bottom: 20px;">
+                <label>Check-in</label>
+
+                <input
+                    type="date"
+                    id="bookingCheckIn"
+                    required
+                    style="width: 100%; padding: 12px; margin-top: 8px;"
+                >
+            </div>
+
+
+            <div style="margin-bottom: 20px;">
+                <label>Check-out</label>
+
+                <input
+                    type="date"
+                    id="bookingCheckOut"
+                    required
+                    style="width: 100%; padding: 12px; margin-top: 8px;"
+                >
+            </div>
+
+
+            <div id="priceSummary" class="price-summary"></div>
+
+
+            <button
+                type="submit"
+                style="padding: 14px 30px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;"
+            >
+                Confirm Booking
+            </button>
+
+        </form>
+
+
+        <div id="bookingConfirmation" class="booking-confirmation"></div>
+
+    </main>
+
+
+    <script src="js/booking.js"></script>
+
+</body>
+
+</html>

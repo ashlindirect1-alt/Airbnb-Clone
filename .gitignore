@@ -1,0 +1,6 @@
+node_modules/
+airbnb.db
+*.db
+.env
+npm-debug.log
+.DS_Store

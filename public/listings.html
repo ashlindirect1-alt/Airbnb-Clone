@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Airbnb Clone - Properties</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/listings.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Airbnb
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="listings.html">Stays</a>
+            <a href="bookings.html">Bookings</a>
+        </nav>
+
+        <button
+            class="login-btn"
+            onclick="window.location.href='login.html'"
+        >
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- Search Summary -->
+
+    <section class="search-summary">
+
+        <h1>Available properties</h1>
+
+        <p id="searchDetails">
+            Showing available properties
+        </p>
+
+        <p
+            id="noResults"
+            style="display: none;"
+        >
+            No properties found.
+        </p>
+
+    </section>
+
+
+    <!-- Filters -->
+
+    <section class="filters-section">
+
+        <h2>Filters</h2>
+
+        <div class="filters-container">
+
+
+            <!-- Price Filter -->
+
+            <div class="filter-group">
+
+                <h3>Price</h3>
+
+                <div class="price-inputs">
+
+                    <input
+                        type="number"
+                        id="minPrice"
+                        placeholder="Min price"
+                        min="0"
+                    >
+
+                    <input
+                        type="number"
+                        id="maxPrice"
+                        placeholder="Max price"
+                        min="0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Property Type -->
+
+            <div class="filter-group">
+
+                <h3>Property Type</h3>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="type-filter"
+                        value="Apartment"
+                    >
+
+                    Apartment
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="type-filter"
+                        value="Villa"
+                    >
+
+                    Villa
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="type-filter"
+                        value="House"
+                    >
+
+                    House
+
+                </label>
+
+            </div>
+
+
+            <!-- Amenities -->
+
+            <div class="filter-group">
+
+                <h3>Amenities</h3>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="amenity-filter"
+                        value="WiFi"
+                    >
+
+                    WiFi
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="amenity-filter"
+                        value="Pool"
+                    >
+
+                    Pool
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        class="amenity-filter"
+                        value="Parking"
+                    >
+
+                    Parking
+
+                </label>
+
+            </div>
+
+
+            <!-- Sort -->
+
+            <div class="filter-group">
+
+                <h3>Sort By</h3>
+
+                <select id="sortSelect">
+
+                    <option value="default">
+                        Default
+                    </option>
+
+                    <option value="priceLow">
+                        Price: Low to High
+                    </option>
+
+                    <option value="bestRated">
+                        Best Rated
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Filter Buttons -->
+
+            <div class="filter-actions">
+
+                <button id="applyFilters">
+                    Apply Filters
+                </button>
+
+                <button id="clearFilters">
+                    Clear
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Properties -->
+
+    <main class="listing-container">
+
+        <div
+            class="property-grid"
+            id="propertyGrid"
+        >
+            <!-- Properties will be loaded dynamically from the database -->
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/listings.js"></script>
+
+
+</body>
+
+</html>

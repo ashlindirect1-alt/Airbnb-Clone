@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Property Details - Airbnb Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/details.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Airbnb
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="listings.html">Stays</a>
+        </nav>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- Property Details -->
+
+    <main class="details-container">
+
+        <div class="details-image">
+
+            <img
+                id="propertyImage"
+                src="images/Property1.jpg"
+                alt="Property"
+            >
+
+        </div>
+
+
+        <div class="details-content">
+
+            <div class="details-header">
+
+                <h1 id="propertyName">
+                    Beautiful Apartment
+                </h1>
+
+                <p id="propertyLocation">
+                    Lahore, Pakistan
+                </p>
+
+                <p id="propertyRating">
+                    ★ 4.8
+                </p>
+
+            </div>
+
+
+            <div class="details-description">
+
+                <h2>About this place</h2>
+
+                <p id="propertyDescription">
+                    A comfortable modern apartment
+                    located near the city center.
+                </p>
+
+            </div>
+
+
+            <div class="property-features">
+
+                <h2>Property information</h2>
+
+                <p>🛏️ Comfortable bedrooms</p>
+
+                <p>🛁 Modern bathroom</p>
+
+                <p>📶 Free WiFi</p>
+
+                <p>🚗 Parking available</p>
+
+            </div>
+
+
+            <div class="booking-card">
+
+                <h2 id="propertyPrice">
+                    $80 night
+                </h2>
+
+                <button class="reserve-btn" onclick="reserveProperty()">
+                    Reserve
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/details.js"></script>
+
+</body>
+
+</html>
